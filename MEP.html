@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEP</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Questions -->
+    <h1>Questions</h1>
+    <div class="container" id="qu">
+        <a href="#a">1.Differentiate between Microprocessor and Microcontrollers</a> 
+        <a href="#b">2.Salient features of ARM7 processor</a>
+        <a href="#c">3.Explain in brief various characteristics of RTOS </a>
+        <a href="#d">4.What are the design metrics of an embeddes system </a>
+        <a href="#e">5.Important features of Rasberry_pi board. </a>
+        <a href="#f">6.Explain the significance of bits of CPSR of ARM7 </a>
+        <a target="_blank" href="https://www.elprocus.com/real-time-applications-of-embedded-systems/">7.Discuss the major application areas of an Embedded System.</a> 
+        <a href="#h">8.Draw the functional pin diagram of ADC 0808.</a>
+        <a href="#i">9.Differentiate between Real-Time Operating System and General Purpose Operating System. </a>
+        <a href="https://www.win.tue.nl/~aeb/comp/8051/set8051.html#51sjmp">10.Explain the instructions of 8051 microcontroller – MOVX, ADC, SJMP, ANL, JNB</a> 
+        <a target="_blank" href="https://afteracademy.com/blog/what-is-kernel-in-operating-system-and-what-are-the-various-types-of-kernel#:~:text=Types%20of%20Kernel,-In%20general%2C%20there&text=Monolithic%20Kernels%20are%20those%20Kernels,not%20used%20in%20this%20case.&text=It%20provides%20CPU%20scheduling%2C%20memory,management%20through%20System%20calls%20only.">11.Explain the diff types of kernels</a> 
+        <a href="#l">12.Working of Stepper motor </a>
+        <a href="#m">13.ARM architecture list features</a>
+        <a href="#n">14.explain assembler directives with respect to the 8051 assemble. </a>
+        <a href="#o">15.what are the sensor used in iot applications with large embedded board for measuring temperature pressure and humidity explain the same.</a> 
+        <a href="#p">16.SoC and DSP (Embedded system core) </a>
+        <a href="#q">17.ARM development tools </a>
+    </div>  
+    <!-- Answers -->
+    <h1>Answers</h1>
+    <span id="a">
+        <h2>Differentiate between Microprocessor and Microcontrollers</h2>
+        <table class="table table-striped"><tbody><tr><td width="50%"><strong>Microprocessor</strong> </td><td><strong>Microcontroller</strong> </td></tr><tr><td>Microprocessor is the heart of Computer system. </td><td>Micro Controller is the heart of an embedded system. </td></tr><tr><td>It is only a processor, so memory and I/O components need to be connected externally </td><td>Micro Controller has a processor along with internal memory and I/O components. </td></tr><tr><td>Memory and I/O has to be connected externally, so the circuit becomes large. </td><td>Memory and I/O are already present, and the internal circuit is small. </td></tr><tr><td>You can't use it in compact systems </td><td>You can use it in compact systems. </td></tr><tr><td>Cost of the entire system is high </td><td>Cost of the entire system is low </td></tr><tr><td>Due to external components, the total power consumption is high. Therefore, it is not ideal for the devices running on stored power like batteries. </td><td>As external components are low, total power consumption is less. So it can be used with devices running on stored power like batteries. </td></tr><tr><td>Most of the microprocessors do not have power saving features. </td><td>Most of the microcontrollers offer power-saving mode. </td></tr><tr><td>It is mainly used in personal computers. </td><td>It is used mainly in a washing machine, MP3 players, and embedded systems. </td></tr><tr><td>Microprocessor has a smaller number of registers, so more operations are memory-based. </td><td>Microcontroller has more register. Hence the programs are easier to write. </td></tr><tr><td>Microprocessors are based on Von Neumann model </td><td>Micro controllers arc based on Harvard architecture </td></tr><tr><td>It is a central processing unit on a single silicon-based integrated chip. </td><td>It is a byproduct of the development of microprocessors with a CPU along with other peripherals. </td></tr><tr><td>It has no RAM, ROM, Input-Output units, timers, and other peripherals on the chip. </td><td>It has a CPU along with RAM, ROM, and other peripherals embedded on a single chip. </td></tr><tr><td>It uses an external bus to interface to RAM, ROM, and other peripherals. </td><td>It uses an internal controlling bus. </td></tr><tr><td>Microprocessor-based systems can run at a very high speed because of the technology involved. </td><td>Microcontroller based systems run up to 200MHz or more depending on the architecture. </td></tr><tr><td>It's used for general purpose applications that allow you to handle loads of data. </td><td>It's used for application-specific systems. </td></tr><tr><td>It's complex and expensive, with a large number of instructions to process. </td><td>It's simple and inexpensive with less number of instructions to process. </td></tr></tbody></table>
+    <a href="#qu">Questions</a>
+    </span>
+
+    <span id="b">
+        <h2>Salient features of ARM7 processor</h2>
+        <ol>
+            <li>Operating frequency: 180 MHz </li>
+            <li>Power Consumption: 0.06 mW/MHz. </li>
+            <li>MIPS/MHz: 0.97 </li>
+            <li>Architecture used: Von-Neumann. MMU</li>
+            <li>MPU: Not present</li>
+            <li>Cache Memory: Not present </li>
+            <li>Jazelle Instruction: Not present </li>
+            <li>Thumb Instruction: Yes (16 bit instruction set) </li>
+            <li>ARM Instruction set: Yes (32 bit)</li>
+            <li>ISA (Instruction Set Architecture): V4T (4 TH Version) </li>
+            <li>Interrupt Controller: Not Present</li>
+            <li>ISR entry: Non Deterministic ISR entry</li>
+            <li>Power Management: No in built Power Management </li>
+            <li>Instruction Set Performance V / 5 code size: Optimal performance code size balance requires interworking between ARM &amp; Thumb code.</li>
+            <li>Ease of application porting from one device to another: Lack of standardization inhibits application porting.</li>
+            </ol>
+            <a href="#qu">Questions</a>
+    </span>
+
+    <span id="c">
+        <h2>What are the different characteristics of RTOS?</h2>
+        <span itemprop="text" class="clearfix"><p><strong>Reliability</strong>: Any RTOS must be reliable. This means that it operates for a reasonably long time without human interference. Reliability also means the configuration to enable the system to choose the right or most profitable action for current operations. For example, a system for the telecom or banking industries needs to consider the cost of terminating or engaging certain actions, compared to a phone or calculator whose cost is limited to an individual, game, app function, etc.</p>
+            <p><strong>Predictability</strong> : A system must execute actions within a known time frame and produce known results. Such results are determined by the procedures or operations taking place. The determination is by targets set during production or procedural planning.</p>
+            <p><strong>Performance</strong> : real-time operating systems are designed to make work easier. Every system must solve a problem or reduce the workload. As such, the developer should provide a system that is easily assimilated with existing software and hardware as well as aligned to the goals of the organization.</p>
+            <p><strong>Manageability</strong>: This means a system whose veracity or bulkiness is manageable. The software and hardware required to operate the RTOS must be of reasonable size. Technicians should also be easy to find and orient. The idea is to reduce the cost of implementation.</p>
+            <p><strong>Scalability</strong>: The needs of any production or event environment change with time. This means that a system may require an upgrade or downgrade. Such provisions must be made during design and installation of any RTOS.</p>
+            </span>
+            <a href="#qu">Questions</a>
+    </span>
+
+    <span id="d">
+        <h2>design metrics of embedded system.</h2>
+        <ol>
+            <li><p>Processing Power: Selection of processor is based on the amount of processing
+            power to get the job done and also on the basis of register width required.</p></li>
+            <li><p>Throughput or Performance : the execution time or throughput of the system.
+            Instruction execution time in the system measures performance. Smaller
+            execution time means higher performance. For eg. in mobile phone, voice signals are processed between antenna and speaker in 0.1s shows phone
+            performance. The system may need to handle a lot of data in a short time.</p></li>
+            <li><p>Response: The system has to react to the changing events quickly.</p></li>
+            <li><p>Memory: Hardware design must make the best estimate of the memory
+            requirement and must make the provision for expansion.</p></li>
+            <li><p>Power consumption: Systems generally work on battery and design of both
+            software and hardware must take care of power saving techniques.</p></li>
+            <li><p>Number of units: The number of units expected to be produced and sold will
+            dictate the trade-off between production cost and development cost.</p></li>
+            <li><p>Expected life-time: Design decisions like selection of components to system
+            development cost will depend upon on how long the system is expected to run.</p></li>
+            <li><p>Program Installation: Installation of software on to the embedded system needs
+            special development tools.</p></li>
+            <li><p>Testability and Debug ability: Setting up test conditions and equipment will be
+            difficult and determining what is wrong with the software will become a difficult
+            task without a keyboard and usual display.</p></li>
+            <li><p>Reliability: It is always required that the system designed must give the output
+            for which it is designed.</p></li>
+            <li><p>Power Dissipation: For battery operated system this is important feature.
+            Examples are mobile phone or digital camera where if power dissipation is small
+            battery needs to be recharge less frequently.</p></li>
+            <li><p>Unit cost: the monetary cost of manufacturing each copy of the system,
+            excluding NRE cost.</p></li>
+            <li><p>NRE cost (Non-Recurring Engineering cost): The monetary cost of designing
+            the system. Once the system is designed, any number of units can be
+            manufactured without incurring any additional design cost (hence the term “nonrecurring”).</p></li>
+            <li><p>Size: the physical space required by the system, often measured in bytes for
+            software, and gates or transistors for hardware.</p></li>
+            <li><p>Flexibility: the ability to change the functionality of the system without incurring
+            heavy NRE cost. Software is typically considered very flexible. Flexibility in
+            design enables, without significant engineering cost, development of different
+            versions or product or to develop advanced version later on. For example
+            software enhancement by adding extra functions.</p></li>
+            <li><p>Maintainability: Deals with support and maintenance to the end user or client in
+            case of technical issues and product failure. A more reliable system means with
+            less maintainability. As reliability of the system increases chances of failure and
+            non-functioning also reduces.</p></li>
+            <li><p>Time-to-market: The amount of time required to design and manufacture the
+            system to the point the system can be sold to customers. The main contributors
+            are design time, manufacturing time and testing time. There may be multiple
+            players in the embedded industry who develop products of the same category
+            (like mobile phones, portable media players etc.). If you come with new product
+            and time to market is high competitor may take advantage of it with their
+            product.</p></li>
+            <li><p>Time-to-prototype: The amount of time to build a working version of the system,
+            which may be bigger or more expensive than the final system implementation, but can be used to verify the system’s usefulness and correctness and to refine
+            the system's functionality. If the prototype is developed faster, the actual
+            estimated development time can be bought down.</p></li>
+            <li><p>Correctness: our confidence that we have implemented the system’s
+            functionality correctly. We can check the functionality throughout the process
+            of designing the system, and we can insert test circuitry to check that
+            manufacturing was correct.</p></li>
+            <li><p>Safety: the probability that the system will not cause harm. It deals with possible
+            damages that can happen to the operators, public and the environment due to
+            breakdown of embedded system, or due to the emission of radioactive or
+            hazardous materials from embedded products. Safety analysis is a must in
+            product engineering to evaluate the anticipated damages and determine best
+            course of action.</p></li>
+            </ol>   
+            <a href="#qu">Questions</a>
+    </span>
+
+    <span id="e">
+        <h2>Important features of Rasberry_pi board.</h2>
+        <ul class="bb-ul">
+            <li class="bb-li">CPU: Quad-core 64-bit ARM Cortex A53 clocked at 1.2 GHz</li>
+            <li class="bb-li">GPU: 400MHz VideoCore IV multimedia</li>
+            <li class="bb-li">Memory: 1GB LPDDR2-900 SDRAM (i.e. 900MHz)</li>
+            <li class="bb-li">USB ports: 4</li>
+            <li class="bb-li">Video outputs: HDMI, composite video (PAL and NTSC) via 3.5 mm jack</li>
+            <li class="bb-li">Network: 10/100Mbps Ethernet and 802.11n Wireless LAN</li>
+            <li class="bb-li">Peripherals: 17 GPIO plus specific functions, and HAT ID bus</li>
+            <li class="bb-li">Bluetooth: 4.1</li>
+            <li class="bb-li">Power source: 5 V via MicroUSB or GPIO header</li>
+            <li class="bb-li">Size: 85.60mm × 56.5mm</li>
+            <li class="bb-li">Weight: 45g (1.6 oz)</li>
+            </ul>
+            <a href="#qu">Questions</a>
+    </span>
+
+    <span id="f">
+        <h2>explain the significance of bits of cpsr of arm7</h2>
+        <table>
+            <thead>
+            <tr>
+            <th>Flag bit</th>
+            <th>Sets when</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>N-Negative</td>
+            <td>In case of signed no. operations If result MSB=1 ;Indicates the result of operation is NEGATIVE</td>
+            </tr>
+            <tr>
+            <td>Z- Zero</td>
+            <td>The result of operation is zero.</td>
+            </tr>
+            <tr>
+            <td>C- Carry</td>
+            <td>The result causes an unsigned carry(carry out of MSB)</td>
+            </tr>
+            <tr>
+            <td>V-Overflow</td>
+            <td>The result causes a signed overflow</td>
+            </tr>
+            <tr>
+            <td>Q- Saturation</td>
+            <td>The result causes an overflow or saturation</td>
+            </tr>
+            <tr>
+            <td>I- Interrupt request Disable</td>
+            <td>I = 1: Disables the IRQ</td>
+            </tr>
+            <tr>
+            <td>F- Fast interrupt request Disable</td>
+            <td>F = 1: Disables the FIQ</td>
+            </tr>
+            <tr>
+            <td>J- Jazelle instruction set</td>
+            <td>If set processor will execute Jazelle/8 bits instructions</td>
+            </tr>
+            <tr>
+            <td>T-Thumb instruction set</td>
+            <td>If set T = 0: Processor in ARM state T = 1: Processor in Thumb state</td>
+            </tr>
+            </tbody>
+            </table>
+            <a href="#qu">Questions</a>
+    </span>
+
+    <span id="i">
+        <h2>Differentiate between Real-Time Operating System and General Purpose Operating System.</h2>
+        <table>
+            <thead>
+            <tr>
+            <th>RTOS</th>
+            <th>GPOS</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>RTOS has unfair scheduling i.e scheduling is based on priority.</td>
+            <td>GPOS has fair scheduling i.e it can be adjusted dynamically for optimized throughput.</td>
+            </tr>
+            <tr>
+            <td>Kernel is pre-emptive either completely or up to maximum degree.</td>
+            <td>Kernel is non-preemptive or has long non-preemptive code sections.</td>
+            </tr>
+            <tr>
+            <td>Priority inversion is a major issue.</td>
+            <td>Priority inversion usually remains unnoticed.</td>
+            </tr>
+            <tr>
+            <td>It has a predictable behavior.</td>
+            <td>There is no predictability.</td>
+            </tr>
+            <tr>
+            <td>It works under worst case assumptions.</td>
+            <td>It optimizes for the average case.</td>
+            </tr>
+            <tr>
+            <td>It does not have a large memory.</td>
+            <td>It has a large memory.</td>
+            </tr>
+            </tbody>
+            </table>
+            <a href="#qu">Questions</a>
+    </span>
+        
+    <span id="l">
+        <h2>Working of Stepper motor </h2>
+       <br> Stepper motors work on the principle of electromagnetism. There is a soft iron or magnetic rotor shaft surrounded by the electromagnetic stators. The rotor and stator have poles which may be teethed or not depending upon the type of stepper. When the stators are energized the rotor moves to align itself along with the stator (in case of a permanent magnet type stepper) or moves to have a minimum gap with the stator (in case of a variable reluctance stepper). This way the stators are energized in a sequence to rotate the stepper motor. Get more information about working of stepper motors through interesting images at the 
+      <br> <a href="#qu">Questions</a>
+    </span>
+
+    <span id="m">
+        <h2>ARM architecture list feature</h2>
+        <ol>
+            <li><strong>Multiprocessing Systems –</strong><br>
+            ARM processors are designed so that they can be used in cases of multiprocessing systems where more than one processors are used to process information. First AMP processor introduced by name of ARMv6K had ability to support 4 CPUs along with its hardware.<p></p>
+            </li>
+            <p> <br></p>
+            <li><strong>Tightly Coupled Memory –</strong><br>
+            Memory of ARM processors is tightly coupled. This has very fast response time. It has low latency (quick response)  that can also be used in cases of cache memory being unpredictable. <p></p>
+            </li>
+            <p> <br></p>
+            <li><strong>Memory Management –</strong><br>
+            ARM processor has management section. This includes Memory Management Unit and Memory Protection Unit. These management systems become very important in managing memory efficiently.<p></p>
+            </li>
+            <p> <br></p>
+            <li><strong>Thumb-2 Technology –</strong><br>
+            Thumb-2 Technology was introduced in 2003 and was used to create variable length instruction set. It extends 16-bit instructions of initial Thumb technology to 32-bit instructions. It has better performance than previously used Thumb technology.<p></p>
+            </li>
+            <p> <br></p>
+            <li><strong>One cycle execution time –</strong><br>
+            ARM processor is optimised for each instruction on CPU. Each instruction is of fixed length that allows time for fetching future instructions before executing present instruction. ARM has CPI (Clock Per Insttuction) of one cycle.<p></p>
+            </li>
+            <p> <br></p>
+            <li><strong>Pipelining –</strong><br>
+            Processing of instructions is done in parallel using pipelines. Instructions are broken down and decoded in one pipeline stage. The pipeline advances one step at a time to increase throughput (rate of processing).<p></p>
+            </li>
+            <p> <br></p>
+            <li><strong>Large number of registers –</strong><br>
+            Large number of registers are used in ARM processor to prevent large amount of memory interactions. Registers contain data and addresses. These act as local memory store for all operations.
+            </li>
+            </ol>
+            <a href="#qu">Questions</a>
+    </span>
+
+    <span id="p">
+        <h2>SoC</h2>
+        <p>Stands for "System On a Chip." An SoC (pronounced "S-O-C") is an integrated circuit that contains all the required circuitry and components of an electronic system on a single chip. It can be contrasted with a traditional computer system, which is comprised of many distinct components. A desktop computer, for example, may have a CPU, video card, and sound card that are connected by different buses on the motherboard. An SoC combines these components into a single chip.</p>
+    <p>primary advantage of a system on a chip is the reduction of physical space required for the system. By merging multiple components together, SoCs can be used to create fully functional systems that are a fraction of the the size of their traditional counterparts. Examples include smartphones, tablets, and wearable devices, such as smartwatches. A smartwatch SoC, for example, may include a primary CPU, graphics processor, DAC, ADC, flash memory, and voltage regulator. All of these components fit on a single chip roughly the size of a quarter.</p>
+    
+        <h2>Dsp</h2>
+        <p>A digital signal processor (DSP) is a specialized microprocessor chip, with its architecture optimized for the operational needs of digital signal processing.[1][2] DSPs are fabricated on MOS integrated circuit chips.[3][4] They are widely used in audio signal processing, telecommunications, digital image processing, radar, sonar and speech recognition systems, and in common consumer electronic devices such as mobile phones, disk drives and high-definition television (HDTV) products.[3]
+
+        </p><p>The goal of a DSP is usually to measure, filter or compress continuous real-world analog signals. Most general-purpose microprocessors can also execute digital signal processing algorithms successfully, but may not be able to keep up with such processing continuously in real-time.</p>
+</span>
+</body>
+</html>
